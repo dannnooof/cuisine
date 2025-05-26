@@ -1,0 +1,49 @@
+.dropdowncontact {
+    float: left;
+    overflow: hidden;
+    
+
+    
+}
+.dropdowncontact .dropbtncontact {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(113, 44, 204);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: 900;
+}
+
+
+
+
+.dropdowncontentcontact{
+    display:none;
+    position: absolute;
+    background-color: rgb(113, 44, 204);
+    box-shadow: 10px 8px 10px 0px rgba(113, 44, 204);
+    border-radius: 20px;
+    
+}
+
+
+.dropdowncontentcontact a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdowncontentcontact a:hover {
+    background-color: rgb(183, 172, 221);
+}
+.show {
+    display: block;
+}
