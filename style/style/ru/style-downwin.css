@@ -1,0 +1,114 @@
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-y: hidden;
+    transition: 0.6s;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 40px;
+    display: inline-block;
+    transition: 0.6s;
+    
+    }
+    
+    .overlay-content{
+    
+    display:inline-block;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    margin-top: 0px;
+   
+    
+    
+  }
+  h2{
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+  }
+ 
+    
+   
+   
+   
+
+  
+    
+    .closebtn {
+    position: absolute;
+    color: rgb(104, 1, 240);
+    top: 20px;
+    right: 45px;
+    font-size: 60px; }
+    @media (max-width: 1100px) {
+        .overlay-content a{
+            font-size: 2em;
+    
+    
+    
+    
+        }
+    }
+    @media (max-width: 900px) {
+        .overlay-content {
+            font-size: 1.5em;
+    
+    
+    
+    
+        }
+    }
+    @media (max-width: 650px) {
+        .overlay-content a{
+            font-size: 1.1em;
+    
+    
+    
+    
+        }
+    }
+    @media (max-width: 500px) {
+        .overlay-content a{
+            font-size: 0.9em;
+    
+    
+    
+    
+        }
+    }
+    @media (max-width: 400px) {
+        .overlay-content a{
+            font-size: 0.7em;
+    
+    
+    
+    
+        }
+    }
+
+    @media (max-height: 700px) {
+        .overlay-content a{
+            font-size: 1.1em;
+            
+    
+    
+    
+    
+        }
+    }
+
+
+ 
+
+
+    
