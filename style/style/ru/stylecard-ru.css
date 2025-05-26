@@ -90,10 +90,10 @@ h1 {
 
 
 .card-front {
-    background-image: url(img/obo15.jpg);
+    background-image: url(img/1f1.jpg);
 }
 .card-back {
-    background-image: url(img/obo14.jpg);
+    background-image: url(img/1f3.webp);
     transform: rotateY(180deg);
 }
 
