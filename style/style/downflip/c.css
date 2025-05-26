@@ -1,0 +1,166 @@
+.card1 {
+  width: 15em;
+  height: 15em;
+  perspective: 1000px;
+ 
+
+  display: inline-block;
+  text-align: center;
+  padding: 30px;
+  
+
+
+
+
+}
+
+
+
+
+
+
+.card-inner1,
+.card-inner2,
+.card-inner3,
+.card-inner4,
+.card-inner5,
+.card-inner6,
+.card-inner7,
+.card-inner8,
+.card-inner9 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  display: inline-flex;
+  text-align: left;
+  
+}
+
+
+.flipped1,
+.flipped2,
+.flipped3,
+.flipped4,
+.flipped5,
+.flipped6,
+.flipped7,
+.flipped8,
+.flipped9 {
+  transform: rotateY(180deg);
+  
+}
+
+
+
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 38rem;
+  height: 38rem;
+  backface-visibility: hidden;
+  box-shadow: 10px 8px 10px 0px rgba(113, 44, 204);
+  display: inline-block;
+
+
+  font-size: 28px;
+  color: rgb(10, 240, 2);
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+
+
+@media (max-width:901px)  {.card1
+   {
+    display: none;
+
+    
+  }
+}
+
+
+
+.inf {
+  display: none;
+  color: rgb(123, 51, 255);
+  text-align: center;
+  font-size: 16px;
+}
+
+@media  (max-width: 901px) {
+  .inf {
+      display: block;
+  }}
+
+
+  @media  (max-width: 601px) {
+    .inf {
+        font-size: 13px;
+    }}
+.gucci-flip-flops{
+  color: rgb(255, 254, 254);
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px; 
+  right: 10px; 
+  display: inline-block;
+  color: #9400D3;
+  size: 200px;
+ 
+
+}
+.his{
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 1px; 
+  left:1px; 
+  display: inline-block;
+  size: 2px;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
