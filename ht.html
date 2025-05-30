@@ -11,117 +11,200 @@
     <link rel="stylesheet" href="style/style/contact/dropbtn.css">
     <link rel="stylesheet" href="style/style/scrol/scrol.css">
     <link rel="website icon " type="png" href="style/img/o.jpeg">
+    
 
 </head>
 
 <body>
     <script src="style/style/contact/down.js"></script>
 
+    <style>
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+/* Загрузочный экран */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
-    <div class="navbar">
-        <img src="style/img/kyh.jpeg" alt="1212" width=51.08pt>
-        <div class="drop">
-            <button class="nav-btn">&#9776</button>
-            <div class="nav-list">
-                <a href="ht.html">домой</a>
-                <a href="me.html">о нас</a>
-                <div class="dropdowncontact">
-                    <button class="dropbtncontact" onclick="myFunction()">контакты</button>
-                    <div class="dropdowncontentcontact" id="myDropdowncontact">
-                        <a href="tel:+79142505718"><img src="style/img/telephone.svg" alt=""></a>
-                        <a href="https://t.me/Figliarin?"><img src="style/img/telegram.svg" alt=""></a>
-                        <a href="https://wa.me/+79142505718?"><img src="style/img/whatsapp.svg" alt=""></a>
-                        <a href="mailto:kazarindaniil4@gmail.com"><img src="style/img/envelope.svg" alt=""></a>
+/* Спиннер */
+#preloader::after {
+    content: "";
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Основной контент */
+#content {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+    </style>
+    <!-- Загрузочный экран -->
+    <div id="preloader">Загрузка...</div>
+    <div id="content">  
+    
+        <div class="navbar">
+            <img src="style/img/kyh.jpeg" alt="1212" width=51.08pt>
+            <div class="drop">
+                <button class="nav-btn" id="toggle">&#9776</button>
+                <div class="nav-list">
+                    <a href="ht.html">домой</a>
+                    <a href="me.html">о нас</a>
+    
+                    <div class="dropdowncontact">
+                        <button class="dropbtncontact" onclick="myFunction()">контакты</button>
+                        <div class="dropdowncontentcontact" id="myDropdowncontact">
+                            <a href="tel:+79142505718"><img src="style/img/telephone.svg" alt=""></a>
+                            <a href="https://t.me/Figliarin?"><img src="style/img/telegram.svg" alt=""></a>
+                            <a href="https://wa.me/+79142505718?"><img src="style/img/whatsapp.svg" alt=""></a>
+                            <a href="mailto:kazarindaniil4@gmail.com"><img src="style/img/envelope.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="main-container">
-
-        <div class="left-bar">
-            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda deserunt voluptatibus, ea neque voluptatum quam ipsum dignissimos enim at sequi rerum tempore, voluptate facere!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda deserunt voluptatibus, ea neque voluptatum quam ipsum dignissimos enim at sequi rerum tempore, voluptate facere!</p> -->
+    
+        <div class="main-container">
+    
+            <div class="left-bar">
+                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda deserunt voluptatibus, ea neque voluptatum quam ipsum dignissimos enim at sequi rerum tempore, voluptate facere!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda deserunt voluptatibus, ea neque voluptatum quam ipsum dignissimos enim at sequi rerum tempore, voluptate facere!</p> -->
+            </div>
+    
+            <div class="container">
+    
+                <div class="card"><a href="ru.html"><img src="style/img/ru2.jfif" width="100%" ; alt="Россия"></a>
+                    <div class="info">
+                        <a href="ru.html">
+                            <h1>
+                                <Font color="#FFFFFF">Россия</Font>
+                            </h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="card"><a href="us.html"><img src="style/img/sha.jfif" width="100%" alt="США"></a>
+                    <div class="info">
+                        <a href="us.html">
+                            <font color="#FFFFFF">
+                                <h1>США</h1>
+                            </font>
+                        </a>
+                    </div>
+                </div>
+                <div class="card"><a href="ch.html"><img src="style/img/shwe.jfif" width="100%" alt="Швейцария"></a>
+                    <div class="info">
+                        <a href="ch.html">
+                            <font color="#FFFFFF">
+                                <h1>Швейцария</h1>
+                            </font>
+                        </a>
+                    </div>
+                </div>
+                <div class="card"><a href="jap.html"><img src="style/img/ipo.jfif" width="100%" alt="Япония"></a>
+                    <div class="info">
+                        <a href="jap.html">
+                            <font color="#FFFFFF">
+                                <h1>Япония</h1>
+                            </font>
+                        </a>
+                    </div>
+                </div>
+                <div class="card"> <a href="fr.html"><img src="style/img/fra.jfif" width="100%" alt="Франция"></a>
+                    <div class="info">
+                        <a href="fr.html">
+                            <font color="#FFFFFF">
+                                <h1>Франция</h1>
+                            </font>
+                        </a>
+                    </div>
+                </div>
+                <div class="card"><a href="it.html"><img src="style/img/ita.jfif" width="100%" alt="Италия"></a>
+                    <div class="info">
+                        <a href="it.html">
+                            <font color="#FFFFFF">
+                                <h1>Италия</h1>
+                            </font>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="right-bar">
+                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda deserunt voluptatibus, ea neque voluptatum quam ipsum dignissimos enim at sequi rerum tempore, voluptate facere!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda deserunt voluptatibus, ea neque voluptatum quam ipsum dignissimos enim at sequi rerum tempore, voluptate facere!</p> -->
+            </div>
+    
         </div>
-
-        <div class="container">
-
-            <div class="card"><a href="ru.html"><img src="style/img/ru2.jfif" width="100%" ; alt="Россия"></a>
-                <div class="info">
-                    <a href="ru.html">
-                        <h1>
-                            <Font color="#FFFFFF">Россия</Font>
-                        </h1>
-                    </a>
-                </div>
-            </div>
-            <div class="card"><a href="us.html"><img src="style/img/sha.jfif" width="100%" alt="США"></a>
-                <div class="info">
-                    <a href="us.html">
-                        <font color="#FFFFFF">
-                            <h1>США</h1>
-                        </font>
-                    </a>
-                </div>
-            </div>
-            <div class="card"><a href="ch.html"><img src="style/img/shwe.jfif" width="100%" alt="Швейцария"></a>
-                <div class="info">
-                    <a href="ch.html">
-                        <font color="#FFFFFF">
-                            <h1>Швейцария</h1>
-                        </font>
-                    </a>
-                </div>
-            </div>
-            <div class="card"><a href="jap.html"><img src="style/img/ipo.jfif" width="100%" alt="Япония"></a>
-                <div class="info">
-                    <a href="jap.html">
-                        <font color="#FFFFFF">
-                            <h1>Япония</h1>
-                        </font>
-                    </a>
-                </div>
-            </div>
-            <div class="card"> <a href="fr.html"><img src="style/img/fra.jfif" width="100%" alt="Франция"></a>
-                <div class="info">
-                    <a href="fr.html">
-                        <font color="#FFFFFF">
-                            <h1>Франция</h1>
-                        </font>
-                    </a>
-                </div>
-            </div>
-            <div class="card"><a href="it.html"><img src="style/img/ita.jfif" width="100%" alt="Италия"></a>
-                <div class="info">
-                    <a href="it.html">
-                        <font color="#FFFFFF">
-                            <h1>Италия</h1>
-                        </font>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <div class="right-bar">
-            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda deserunt voluptatibus, ea neque voluptatum quam ipsum dignissimos enim at sequi rerum tempore, voluptate facere!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tenetur!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda deserunt voluptatibus, ea neque voluptatum quam ipsum dignissimos enim at sequi rerum tempore, voluptate facere!</p> -->
-        </div>
-
-    </div>
-       
+    
         <div class="end">
-            <p>&copy; 2025 Кухня мира. Все права защищены.</p>
-            <p>
-                <a href="#">Политика конфиденциальности</a> |
-                <a href="#">Условия использования</a>
-            </p>
+                <p>&copy; 2025 Кухня мира. Все права защищены.</p>
+                <p>
+                    <a href="#">Политика конфиденциальности</a> |
+                    <a href="#">Условия использования</a>
+                </p>
         </div>
+    </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+    const content = document.getElementById("content");
+    const images = document.querySelectorAll("img");
+
+    // Функция для скрытия загрузочного экрана
+    function hidePreloader() {
+        preloader.style.display = "none";
+        content.style.display = "block";
+    }
+
+    // Если изображений нет, сразу показываем контент
+    if (!images.length) return hidePreloader();
+
+    let loaded = 0;
+
+    // Добавляем обработчики событий для каждого изображения
+    images.forEach((img) => {
+        img.onload = img.onerror = () => {
+            loaded++;
+            if (loaded === images.length) hidePreloader();
+        };
+    });
+});
+
+</script>
+   
+
 </body>
 
 </html>
