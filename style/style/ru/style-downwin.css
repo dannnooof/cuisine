@@ -47,7 +47,7 @@
     .closebtn {
     position: absolute;
     color: rgb(104, 1, 240);
-    top: 20px;
+    top: 0px;
     right: 45px;
     font-size: 60px; }
     @media (max-width: 1100px) {
