@@ -1,1 +1,1 @@
-<a href="ht.html">домой</a>
+<a href="ht.html">старт</a>
